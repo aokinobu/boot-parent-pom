@@ -6,12 +6,12 @@
     <version>0.23-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <!--
     <parent>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-parent</artifactId>
       <version>1.2.5.RELEASE</version>
     </parent>
-    <!--
     NOTE: Snapshot release
     1. mvn -Pgpg deploy -Denforcer.skip=true
 
@@ -153,7 +153,8 @@
         <plugin.release.version>2.5</plugin.release.version>
         <plugin.resources.version>2.6</plugin.resources.version>
         <plugin.scm-publish.version>1.0</plugin.scm-publish.version>
-        <plugin.site.version>3.2</plugin.site.version>
+        <!-- https://cwiki.apache.org/confluence/display/MAVEN/AetherClassNotFound -->
+        <plugin.site.version>3.3</plugin.site.version>
         <plugin.source.version>2.2.1</plugin.source.version>
         <plugin.surefire.version>2.17</plugin.surefire.version>
         <plugin.taglist.version>2.4</plugin.taglist.version>
@@ -203,8 +204,8 @@
     </properties>
 
     <issueManagement>
-        <url>https://www.github.com/${repository.user}/${repository.name}/issues</url>
-        <system>Github Issues</system>
+        <url>${project.scm.url}/${repository.user}/${repository.name}/issues</url>
+        <system>${project.scm.url} Issues</system>
     </issueManagement>
 
     <build>
