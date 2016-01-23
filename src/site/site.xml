@@ -1,56 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/DECORATION/1.3.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.3.0 http://maven.apache.org/xsd/decoration-1.3.0.xsd"
-         name="${project.artifactId}">
-    <skin>
-        <groupId>org.apache.maven.skins</groupId>
-        <artifactId>maven-fluido-skin</artifactId>
-        <version>1.3.0</version>
-    </skin>
-
-    <poweredBy>
-        <logo name="" href="http://www.ensor.cc" img="/img/click-concepts-logo.png"/>
-    </poweredBy>
-
-    <custom>
-        <fluidoSkin>
-            <topBarEnabled>true</topBarEnabled>
-            <topBarIcon>
-                <name>Click Concepts</name>
-                <alt>Click Concepts Homepage</alt>
-                <src>/img/click-concepts-square-logo.png</src>
-                <href>http://www.ensor.cc</href>
-            </topBarIcon>
-            <sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
-            <facebookLike/>
-            <googlePlusOne/>
-            <twitter>
-                <user>mikeensor</user>
-                <showUser>true</showUser>
-                <showFollowers>true</showFollowers>
-            </twitter>
-        </fluidoSkin>
-    </custom>
-
-    <publishDate format="dd MMM yyyy"/>
-
-    <version position="right"/>
-
-    <body>
-        <menu name="Documentation">
-            <item name="Home" href="/index.html"/>
-        </menu>
-
-        <menu name="Modules" ref="modules" inherit="none"/>
-        <menu name="Reports" ref="reports" inherit="none"/>
-
-        <menu name="Links" inherit="none" inheritAsRef="true">
-            <item name="Mike's Blog" href="http://www.ensor.cc/"/>
-            <item name="Github Homepage" href="http://www.github.com/mike-ensor"/>
-            <item name="Bitbucket Homepage" href="http://mikeensor.bitbucket.com/"/>
-            <item name="Linked In Profile" href="http://www.linkedin.com/in/mikeensor"/>
-        </menu>
-
-    </body>
+<project xmlns="http://maven.apache.org/DECORATION/1.3.0"         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.3.0 http://maven.apache.org/xsd/decoration-1.3.0.xsd"         name="${project.artifactId}">
+  <skin>
+    <groupId>org.apache.maven.skins</groupId>
+    <artifactId>maven-fluido-skin</artifactId>
+    <version>1.4</version>
+  </skin>
+  <poweredBy>
+    <logo name="glytoucan" href="http://www.glytoucan.org" img="https://glytoucan.org/img/logo_toucan.png"/>
+  </poweredBy>
+  <custom>
+    <fluidoSkin>
+      <topBarEnabled>true</topBarEnabled>
+      <sideBarEnabled>true</sideBarEnabled>
+      <topBarIcon>
+        <name>GlyConvert</name>
+        <alt>GlyConvert</alt>
+        <src>https://glytoucan.org/img/logo_toucan.png</src>
+        <href>http://nexus.glycoinfo.org/content/sites/project/glyconvert/</href>
+      </topBarIcon>
+      <sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
+      <googleSearch>
+        <sitesearch/>
+      </googleSearch>
+      <facebookLike/>
+      <googlePlusOne/>
+      <twitter>
+        <user>glytoucan</user>
+        <showUser>true</showUser>
+        <showFollowers>true</showFollowers>
+      </twitter>
+    </fluidoSkin>
+  </custom>
+  <publishDate format="dd MMM yyyy"/>
+  <version position="right"/>
+  <body>
+    <menu name="Documentation">
+      <item name="Home" href="/index.html"/>
+    </menu>
+    <menu name="Modules" ref="modules" />
+    <menu name="Reports" ref="reports" />
+    <menu name="Links" inherit="none" inheritAsRef="true">
+      <item name="Github Homepage" href="http://www.github.com/glytoucan"/>
+      <item name="Bitbucket Homepage" href="http://bitbucket.org/glycoSW"/>
+    </menu>
+  </body>
 </project>
