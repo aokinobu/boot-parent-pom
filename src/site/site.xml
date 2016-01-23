@@ -12,12 +12,6 @@
     <fluidoSkin>
       <topBarEnabled>true</topBarEnabled>
       <sideBarEnabled>true</sideBarEnabled>
-      <topBarIcon>
-        <name>GlyConvert</name>
-        <alt>GlyConvert</alt>
-        <src>https://glytoucan.org/img/logo_toucan.png</src>
-        <href>http://nexus.glycoinfo.org/content/sites/project/glyconvert/</href>
-      </topBarIcon>
       <sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
       <googleSearch>
         <sitesearch/>
@@ -39,9 +33,11 @@
     </menu>
     <menu name="Modules" ref="modules" />
     <menu name="Reports" ref="reports" />
-    <menu name="Links" inherit="none" inheritAsRef="true">
-      <item name="Github Homepage" href="http://www.github.com/glytoucan"/>
-      <item name="Bitbucket Homepage" href="http://bitbucket.org/glycoSW"/>
+    <menu name="GlyTouCan Links">
+        <item href="http://glytoucan.org" name="The International Glycan Repository"/>
+        <item href="http://code.glytoucan.org" name="Manual And Code"/>
+        <item href="http://code.glytoucan.org/batch" name="Batch ETL and SparqlBeans"/>
+        <item href="http://www.wurcs-wg.org" name="WURCS"/>
     </menu>
   </body>
 </project>
