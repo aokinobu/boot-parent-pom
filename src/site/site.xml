@@ -14,7 +14,7 @@
       <sideBarEnabled>true</sideBarEnabled>
       <sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
       <googleSearch>
-        <sitesearch/>
+        <sitesearch>http://nexus.glycoinfo.org/content/sites/project/</sitesearch>
       </googleSearch>
       <facebookLike/>
       <googlePlusOne/>
