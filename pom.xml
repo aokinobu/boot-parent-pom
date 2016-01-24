@@ -201,6 +201,7 @@
         <pmd.skip>false</pmd.skip>
         <versions.skip>false</versions.skip>
 
+        <googleAnalyticsAccountId>UA-54566807-1</googleAnalyticsAccountId>
     </properties>
 
     <issueManagement>
