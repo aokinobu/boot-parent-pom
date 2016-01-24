@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/DECORATION/1.3.0"         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.3.0 http://maven.apache.org/xsd/decoration-1.3.0.xsd"         name="${project.artifactId}">
+  <googleAnalyticsAccountId>UA-54566807-1</googleAnalyticsAccountId>
   <skin>
     <groupId>org.apache.maven.skins</groupId>
     <artifactId>maven-fluido-skin</artifactId>
@@ -13,6 +14,7 @@
       <topBarEnabled>true</topBarEnabled>
       <sideBarEnabled>true</sideBarEnabled>
       <sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
+      <navBarStyle>navbar-inverse</navBarStyle>
       <googleSearch>
         <sitesearch>http://nexus.glycoinfo.org/content/sites/project/</sitesearch>
       </googleSearch>
