@@ -39,9 +39,9 @@
     <description>This is a master pom that contains Site documentation</description>
 
     <scm><!-- git@github.com:mike-ensor/clickconcepts-master-pom.git -->
-        <connection>scm:git:ssh://${repository.domain}/${repository.user}/${repository.name}.git</connection>
+        <connection>scm:git:https://${repository.domain}/${repository.user}/${repository.name}.git</connection>
         <url>https://${repository.domain}/${repository.user}/${repository.name}</url>
-        <developerConnection>scm:git:ssh://${repository.domain}/${repository.user}/${repository.name}.git
+        <developerConnection>scm:git:https://${repository.domain}/${repository.user}/${repository.name}.git
         </developerConnection>
         <tag>HEAD</tag>
     </scm>
@@ -87,9 +87,9 @@
         <!-- @OVERRIDE this property per each project -->
         <repository.domain>github.com</repository.domain>
         <!-- @OVERRIDE this property per each project -->
-        <repository.user>mike-ensor</repository.user>
+        <repository.user>glytoucan</repository.user>
         <!-- @OVERRIDE this property per each project -->
-        <repository.name>clickconcepts-master-pom</repository.name>
+        <repository.name>project-doc-pom</repository.name>
 
         <!-- =============================================  -->
         <!--    BITBUCKET SPECIFIC DOCUMENTATION CHANGES    -->
