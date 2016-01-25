@@ -201,8 +201,8 @@
     </properties>
 
     <issueManagement>
-        <url>${project.scm.url}/${repository.user}/${repository.name}/issues</url>
-        <system>${project.scm.url} Issues</system>
+        <url>https://${repository.domain}/${repository.user}/${repository.name}/issues</url>
+        <system>${repository.domain} Issues</system>
     </issueManagement>
 
     <build>
