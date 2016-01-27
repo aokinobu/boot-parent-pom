@@ -1,5 +1,9 @@
 Documentation
 ============
+Please check the [wiki](https://github.com/glytoucan/pom-site/wiki) for how to use this.
+
+Original README:
+
 Visit the documentation at: [Latest Documentation][id1]
 
 
