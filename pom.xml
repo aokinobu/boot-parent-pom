@@ -50,6 +50,20 @@
         <!-- Would prefer 3.0.4+, but 3.0.3 will work -->
         <maven>3.0.3</maven>
     </prerequisites>
+    <repositories>
+		<repository>
+		  <id>bintray</id>
+		  <url>http://jcenter.bintray.com</url>
+		</repository>
+		<repository>
+		  <id>spring-releases</id>
+		  <url>http://repo.spring.io/libs-release</url>
+		</repository>
+		<repository>
+		  <id>glycoinfo</id>
+		  <url>http://nexus.glycoinfo.org/content/groups/public</url>
+		</repository>
+    </repositories>
     <distributionManagement>
       <repository>
         <id>glycoinfo</id>
@@ -459,6 +473,7 @@
                     <configuration>
                         <skip>${javadocs.skip}</skip>
                         <failOnError>false</failOnError>
+		                <additionalparam>-Xdoclint:none</additionalparam>
                     </configuration>
                 </plugin>
                 <plugin>
@@ -671,6 +686,11 @@
                             <plugin>
                                 <groupId>org.apache.maven.plugins</groupId>
                                 <artifactId>maven-javadoc-plugin</artifactId>
+                                <configuration>
+			                        <skip>${javadocs.skip}</skip>
+	                        		<failOnError>false</failOnError>
+			                		<additionalparam>-Xdoclint:none</additionalparam>
+                    			</configuration>
                             </plugin>
                             <plugin>
                                 <groupId>org.apache.maven.plugins</groupId>
