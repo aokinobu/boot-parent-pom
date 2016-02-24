@@ -473,7 +473,7 @@
                     <configuration>
                         <skip>${javadocs.skip}</skip>
                         <failOnError>false</failOnError>
-		                <additionalparam>-Xdoclint:none</additionalparam>
+<!-- 		                <additionalparam>-Xdoclint:none</additionalparam> -->
                     </configuration>
                 </plugin>
                 <plugin>
@@ -689,7 +689,7 @@
                                 <configuration>
 			                        <skip>${javadocs.skip}</skip>
 	                        		<failOnError>false</failOnError>
-			                		<additionalparam>-Xdoclint:none</additionalparam>
+<!-- 			                		<additionalparam>-Xdoclint:none</additionalparam> -->
                     			</configuration>
                             </plugin>
                             <plugin>
