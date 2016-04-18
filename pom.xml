@@ -689,6 +689,7 @@
                                 <configuration>
 			                        <skip>${javadocs.skip}</skip>
 	                        		<failOnError>false</failOnError>
+	                        		<additionalparam>${javadoc.opts}</additionalparam>
 <!-- 			                		<additionalparam>-Xdoclint:none</additionalparam> -->
                     			</configuration>
                             </plugin>
@@ -883,6 +884,8 @@
                         <include>**/*Specification.java</include>
                     </includes>
                     <systemProperties />
+			        <reuseForks>false</reuseForks>
+			        <forkCount>1</forkCount>
                 </configuration>
             </plugin>
             <plugin>
@@ -1035,5 +1038,14 @@
                 </plugins>
             </build>
         </profile>
+ 	    <profile>
+	      <id>doclint-java8-disable</id>
+	      <activation>
+	        <jdk>[1.8,)</jdk>
+	      </activation>
+	      <properties>
+	        <javadoc.opts>-Xdoclint:none</javadoc.opts>
+	      </properties>
+	    </profile>
     </profiles>
 </project>
