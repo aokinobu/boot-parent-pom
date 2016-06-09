@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.glytoucan</groupId>
     <artifactId>pom-site</artifactId>
-    <version>0.24-SNAPSHOT</version>
+    <version>1.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <!--
@@ -64,6 +64,18 @@
 		  <url>http://nexus.glycoinfo.org/content/groups/public</url>
 		</repository>
     </repositories>
+    
+    <pluginRepositories>
+		<pluginRepository>
+		  <id>bintray</id>
+		  <url>http://jcenter.bintray.com</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>spring-releases</id>
+			<url>http://repo.spring.io/libs-release</url>
+		</pluginRepository>
+	</pluginRepositories>
+    
     <distributionManagement>
       <repository>
         <id>glycoinfo</id>
