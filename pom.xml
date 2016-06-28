@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.glytoucan</groupId>
     <artifactId>pom-site</artifactId>
-    <version>1.2-SNAPSHOT</version>
+    <version>1.2.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <!--
@@ -37,7 +37,10 @@
 
     <name>${project.artifactId}</name>
     <description>This is a master pom that contains Site documentation</description>
-
+    <organization>
+        <name>GlyTouCan - The International Glycan Repository</name>
+        <url>http://glytoucan.org</url>
+    </organization>
     <scm><!-- git@github.com:mike-ensor/clickconcepts-master-pom.git -->
         <connection>scm:git:https://${repository.domain}/${repository.user}/${repository.name}.git</connection>
         <url>https://${repository.domain}/${repository.user}/${repository.name}</url>
